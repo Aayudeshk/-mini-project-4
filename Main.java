@@ -14,7 +14,11 @@ class Main {
     System.out.println("Enter units");
     String units = sc.next();
     double area = areaOfRectangle(length, breadth);
-    System.out.println("Area of the rectangle is " + area + " Square " + units);  
+    System.out.println("What is the color of the rectangle?");
+    String color = sc.next();
+   // System.out.println("Area of the rectangle is " + area + " Square " + units);  
+    String colorOfRectangle = shapeColor(color);
+    System.out.println("Area of the " + color + " rectangle is " + area + " Square " + units);
     }else if(Shape.equals("Circle"))
     {
       System.out.println("Enter the radius");
@@ -22,7 +26,11 @@ class Main {
       double area = areaOfCircle(r);
       System.out.println("Enter the units");
       String units = sc.next();
-      System.out.println("Area of the circle is " + area + " Square " + units);
+      //System.out.println("Area of the circle is " + area + " Square " + units);
+      System.out.println("What is the color of the circle?");
+      String color = sc.next();
+      String colorOfCircle = shapeColor(color);
+      System.out.println("Area of the " + color + " circle is " + area + " Square " + units);
     }else{
       System.out.println("Enter the height");
       double height = sc.nextDouble();
@@ -31,9 +39,13 @@ class Main {
       System.out.println("Enter the units");
       double area = areaOfTriangle(height, length);
       String units = sc.next();
-      System.out.println("Area of the triangle is " + area + " Square " + units);
+      System.out.println("What is the color of the triangle?");
+      String color = sc.next();
+      //System.out.println("Area of the triangle is " + area + " Square " + units);
+      String colorOfTriangle = shapeColor(color);
+      System.out.println("Area of the " + color + " triangle is " + area + " Square " + units);
     }
-  
+ 
   }
   
   static double areaOfRectangle(double length, double breadth)
@@ -54,5 +66,12 @@ class Main {
     double area = 0.5 * height * length;
     return area;
   }
- //
+
+  static String shapeColor(String color)
+  {
+    color = color;
+    return color;
+  }
+  
+
 }
