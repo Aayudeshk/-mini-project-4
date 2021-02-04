@@ -20,6 +20,7 @@ class Main {
       System.out.println("Enter the radius");
       double r = sc.nextDouble();
       double area = areaOfCircle(r);
+      System.out.println("Enter the units");
       String units = sc.next();
       System.out.println("Area of the circle is " + area + " Square " + units);
     }else{
@@ -53,5 +54,5 @@ class Main {
     double area = 0.5 * height * length;
     return area;
   }
- 
+ //
 }
